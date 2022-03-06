@@ -54,7 +54,7 @@ Pulse Width Modulation(PWM) is a method of reducing the average power delivered 
 
 ## Circuit Details
 
-The input to circuit is in 3bit binary, which then processed through decoder which inturn switches an array of Mosfets. The drain of mosfet are connected to ends of voltage divider. The combination of decoder and mosfet makes it function as DAC. The output value of mosfet circuit is passed at non-inverting terminal of Op-Amp. The inverting terminal is connected to triangular signal. The output of Op-Amp is resultant PWM we're looking for. The decoder circuit is designed in makerchip which is interfaced with ngveri. The other part of circuit is designed using eSim and simulated using ngspice. Thus the design in mixed signal circuit.
+The input to circuit is in 3bit binary, which then processed through decoder which inturn switches an array of Mosfets. The drain of mosfet are connected to ends of voltage divider. The combination of decoder and mosfet makes it function as DAC. The output value of mosfet circuit is passed at non-inverting terminal of Op-Amp. The inverting terminal is connected to triangular signal. The output of Op-Amp is resultant PWM we're looking for. The decoder circuit is designed in makerchip which is interfaced with ngveri. The other part of circuit is designed using eSim and simulated using ngspice. Thus the design is mixed signal circuit.
 
 ## Tools Used
 
@@ -62,7 +62,7 @@ The input to circuit is in 3bit binary, which then processed through decoder whi
 <p align="center">
 	<img src="media/eSim.png">
 	</br>
-	Figure 1 : Reference Circuit
+	Figure 2 : eSim
 </p>
 It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD.
 </br>
@@ -89,7 +89,7 @@ https://www.veripool.org/verilator/
 <p align="center">
 	<img src="media/schematic.png">
 	</br>
-	Figure 1 : Reference Circuit
+	Figure 3 : Schematic
 </p>
 
 ### Verilog Code
@@ -183,7 +183,7 @@ endmodule
 <p align="center">
 	<img src="media/makerchip_schematic.png">
 	</br>
-	Figure 1 : Reference Circuit
+	Figure 4 : Makerchip Waveform
 </p>
 
 ### Netlist
@@ -257,12 +257,12 @@ U3  Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U
 <p align="center">
 	<img src="media/NgSpice_plot.png">
 	</br>
-	Figure 1 : Reference Circuit
+	Figure 5 : NgSpice Plot
 </p>
 <p align="center">
 	<img src="media/NgSpice_plot2.png">
 	</br>
-	Figure 1 : Reference Circuit
+	Figure 6 : NgSpice Plot
 </p>
 
 ## Steps to run NgVeri Model
