@@ -42,12 +42,19 @@ Pulse Width Modulation(PWM) is a method of reducing the average power delivered 
 
 | Input | Output |
 |:-----:|:------:|
-|		|		|
-|		|		|
+| 000		|  <img src="media/wave_0.png">		|
+| 001   |  <img src="media/wave_1.png">   |
+| 010   |  <img src="media/wave_2.png">   |
+| 011   |  <img src="media/wave_3.png">   |
+| 100   |  <img src="media/wave_4.png">   |
+| 101   |  <img src="media/wave_5.png">   |
+| 110   |  <img src="media/wave_6.png">   |
+| 111   |  <img src="media/wave_7.png">   |
+
 
 ## Circuit Details
 
-The input to circuit is in 3bit binary, which then processed through decoder which inturn switches an array of Mosfets. The drain of mosfet are connected to ends of voltage divider. The combination of decoder and mosfet makes it function as DAC. The output value of mosfet circuit is passed at non-inverting terminal of Op-Amp. The inverting terminal is connected to triangular signal. The output of Op-Amp is resultant PWM we're looking for.
+The input to circuit is in 3bit binary, which then processed through decoder which inturn switches an array of Mosfets. The drain of mosfet are connected to ends of voltage divider. The combination of decoder and mosfet makes it function as DAC. The output value of mosfet circuit is passed at non-inverting terminal of Op-Amp. The inverting terminal is connected to triangular signal. The output of Op-Amp is resultant PWM we're looking for. The decoder circuit is designed in makerchip which is interfaced with ngveri. The other part of circuit is designed using eSim and simulated using ngspice. Thus the design in mixed signal circuit.
 
 ## Tools Used
 
