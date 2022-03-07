@@ -1,0 +1,62 @@
+* D:\eSim-Workspace\3bit_PWM_Generator\3bit_PWM_Generator.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/06/22 03:03:36
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U6  b2 b1 b0 en Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ adc_bridge_4		
+U7  Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_M1-Pad2_ Net-_M2-Pad2_ Net-_M3-Pad2_ Net-_M4-Pad2_ Net-_M5-Pad2_ Net-_M6-Pad2_ Net-_M7-Pad2_ Net-_M8-Pad2_ dac_bridge_8		
+R2  Net-_M1-Pad1_ Net-_M2-Pad1_ 10k		
+R4  Net-_M2-Pad1_ Net-_M3-Pad1_ 10k		
+R6  Net-_M3-Pad1_ Net-_M4-Pad1_ 10k		
+R8  Net-_M4-Pad1_ Net-_M5-Pad1_ 10k		
+R10  Net-_M5-Pad1_ Net-_M6-Pad1_ 10k		
+R12  Net-_M6-Pad1_ Net-_M7-Pad1_ 10k		
+R14  Net-_M7-Pad1_ Net-_M8-Pad1_ 10k		
+R17  Net-_M8-Pad1_ GND 10k		
+M1  Net-_M1-Pad1_ Net-_M1-Pad2_ Net-_D1-Pad1_ Net-_D1-Pad1_ eSim_MOS_N		
+M2  Net-_M2-Pad1_ Net-_M2-Pad2_ Net-_D2-Pad1_ Net-_D2-Pad1_ eSim_MOS_N		
+M3  Net-_M3-Pad1_ Net-_M3-Pad2_ Net-_D3-Pad1_ Net-_D3-Pad1_ eSim_MOS_N		
+M4  Net-_M4-Pad1_ Net-_M4-Pad2_ Net-_D4-Pad1_ Net-_D4-Pad1_ eSim_MOS_N		
+M5  Net-_M5-Pad1_ Net-_M5-Pad2_ Net-_D5-Pad1_ Net-_D5-Pad1_ eSim_MOS_N		
+M6  Net-_M6-Pad1_ Net-_M6-Pad2_ Net-_D6-Pad1_ Net-_D6-Pad1_ eSim_MOS_N		
+M7  Net-_M7-Pad1_ Net-_M7-Pad2_ Net-_D7-Pad1_ Net-_D7-Pad1_ eSim_MOS_N		
+M8  Net-_M8-Pad1_ Net-_M8-Pad2_ Net-_D8-Pad1_ Net-_D8-Pad1_ eSim_MOS_N		
+R1  Net-_D1-Pad1_ GND 100k		
+R3  Net-_D2-Pad1_ GND 100k		
+R5  Net-_D3-Pad1_ GND 100k		
+R7  Net-_D4-Pad1_ GND 100k		
+R9  Net-_D5-Pad1_ GND 100k		
+R11  Net-_D6-Pad1_ GND 100k		
+R13  Net-_D7-Pad1_ GND 100k		
+R15  Net-_D8-Pad1_ GND 100k		
+D1  Net-_D1-Pad1_ Threshold eSim_Diode		
+D2  Net-_D2-Pad1_ Threshold eSim_Diode		
+D3  Net-_D3-Pad1_ Threshold eSim_Diode		
+D4  Net-_D4-Pad1_ Threshold eSim_Diode		
+D5  Net-_D5-Pad1_ Threshold eSim_Diode		
+D6  Net-_D6-Pad1_ Threshold eSim_Diode		
+D7  Net-_D7-Pad1_ Threshold eSim_Diode		
+D8  Net-_D8-Pad1_ Threshold eSim_Diode		
+R16  Threshold GND 100k		
+U8  Threshold plot_v1		
+v5  Net-_M1-Pad1_ GND 5		
+U1  b2 plot_v1		
+U2  b1 plot_v1		
+U4  b0 plot_v1		
+U5  en plot_v1		
+X1  ? TriangleSignal TriangularWaveGen		
+X2  ? TriangleSignal Threshold Net-_X2-Pad4_ ? PWM_Out Net-_X2-Pad7_ ? lm_741		
+v7  GND Net-_X2-Pad4_ 1		
+v6  Net-_X2-Pad7_ GND 5		
+U9  TriangleSignal plot_v1		
+U10  PWM_Out plot_v1		
+v4  en GND DC		
+v3  b0 GND DC		
+v2  b1 GND DC		
+v1  b2 GND DC		
+U3  Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ decoder_3x8		
+
+.end

@@ -1,0 +1,26 @@
+* c:\fossee\esim\library\subcircuitlibrary\triangular_wave_gen\triangular_wave_gen.cir
+
+.include lm_741.sub
+.include D.lib
+x1 ? gnd net-_r1-pad1_ net-_x1-pad4_ ? net-_r2-pad2_ net-_x1-pad7_ ? lm_741
+x2 ? net-_c1-pad2_ gnd net-_x1-pad4_ ? net-_c1-pad1_ net-_x1-pad7_ ? lm_741
+r1  net-_r1-pad1_ net-_c1-pad1_ 600
+r2  net-_r1-pad1_ net-_r2-pad2_ 1k
+r3  net-_r2-pad2_ net-_c1-pad2_ 12k
+c1  net-_c1-pad1_ net-_c1-pad2_ 100n
+v2  net-_x1-pad7_ gnd 5
+v1  gnd net-_x1-pad4_ 5
+c2  net-_c2-pad1_ net-_c1-pad1_ 10u
+d1 gnd net-_c2-pad1_ 1N4148
+r4  net-_c2-pad1_ gnd 5k
+* u2  net-_c1-pad1_ net-_u2-pad2_ port
+v3  net-_u2-pad2_ net-_c2-pad1_ 0.7
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

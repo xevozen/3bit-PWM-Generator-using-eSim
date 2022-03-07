@@ -1,0 +1,23 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\Triangular_wave_gen\Triangular_wave_gen.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/05/22 14:10:16
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  ? GND Net-_R1-Pad1_ Net-_X1-Pad4_ ? Net-_R2-Pad2_ Net-_X1-Pad7_ ? lm_741		
+X2  ? Net-_C1-Pad2_ GND Net-_X1-Pad4_ ? Net-_C1-Pad1_ Net-_X1-Pad7_ ? lm_741		
+R1  Net-_R1-Pad1_ Net-_C1-Pad1_ 600		
+R2  Net-_R1-Pad1_ Net-_R2-Pad2_ 1k		
+R3  Net-_R2-Pad2_ Net-_C1-Pad2_ 12k		
+C1  Net-_C1-Pad1_ Net-_C1-Pad2_ 100n		
+v2  Net-_X1-Pad7_ GND 5		
+v1  GND Net-_X1-Pad4_ 5		
+C2  Net-_C2-Pad1_ Net-_C1-Pad1_ 10u		
+D1  GND Net-_C2-Pad1_ eSim_Diode		
+R4  Net-_C2-Pad1_ GND 5k		
+U2  Net-_C1-Pad1_ Net-_U2-Pad2_ PORT		
+v3  Net-_U2-Pad2_ Net-_C2-Pad1_ 0.7		
+
+.end
