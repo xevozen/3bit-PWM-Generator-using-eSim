@@ -15,7 +15,7 @@
 * [Project Files](#Project-Files)
     * [Schematic](#Schematic)
     * [Verilog Code](#Verilog-Code)
-    * [Makerchip](#Makerchip)
+    * [Makerchip Code](#Makerchip-Code)
     * [Makerchip Waveform](#Makerchip-Waveform)
     * [Netlist](#Netlist)
     * [NgSpice Plot](#NgSpice-Plot)
@@ -124,7 +124,7 @@ end
 endmodule
 ```
 
-### Makerchip
+### Makerchip Code
 ```
 \TLV_version 1d: tl-x.org
 \SV
