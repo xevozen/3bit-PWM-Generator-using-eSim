@@ -294,6 +294,8 @@ As per the initial design the circuit is implemented successfully. Futher improv
 
 <img src="media/warning-markup.svg">
 
+This project is being submitted for [Mixed Signal Circuit Design and Simulation Marathon](https://esim.fossee.in/mixed-signal-design-marathon "eSim Marathon Page") and being published at [Mixed Signal Circuit Design and Simulation Marathon Completed Circuits](https://esim.fossee.in/mixed-signal-design-marathon/download/circuits/90 "Full project details") under Creative Commons Attribution-ShareAlike 4.0 International License. 
+
 ## Author
 Souhardhya Paul, B.Tech, Electronics and Communication Engineering, Netaji Subhash Engineering College, Kolkata.
 
