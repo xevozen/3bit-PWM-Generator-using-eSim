@@ -309,3 +309,6 @@ Souhardhya Paul, B.Tech, Electronics and Communication Engineering, Netaji Subha
 [1] Vaisband, M. Azhar, E. G. Friedman and S. Köse, "Digitally Controlled Pulse Width Modulator for On-Chip Power Management," in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 22, no. 12, pp. 2527-2534, Dec. 2014, doi: 10.1109/TVLSI.2013.2294402.
 
 [2] Yang, HR., Yoon, K.S. Digitally controlled PWM buck converter employing counter and VCOs. Analog Integr Circ Sig Process 109, 261–269 (2021). https://doi.org/10.1007/s10470-021-01939-3.
+
+## Side Note
+This project is shortlisted under **Outstanding** category for the Mixed Signal Circuit Design and Simulation Marathon, details can be viewed here : https://hackathon.fossee.in/esim/results and https://esim.fossee.in/mixed-signal-design-marathon/download/completed-circuit
